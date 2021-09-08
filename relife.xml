@@ -1430,10 +1430,10 @@ body#layout #hidden-widgets{display:none!important}
     </b:includable>
     <b:includable id='theme-custom-lang'>
       <b:switch var='data:message'>
-        <b:case value='prevPost'/><b:if cond='data:blog.locale.language == &quot;en&quot;'>Previous Post<b:elseif cond='data:blog.locale.language == &quot;es&quot;'/>Artículo Anterior<b:elseif cond='data:blog.locale.language == &quot;pt&quot;'/>Postagem Anterior<b:else/><data:messages.newer/></b:if>
-        <b:case value='nextPost'/><b:if cond='data:blog.locale.language == &quot;en&quot;'>Next Post<b:elseif cond='data:blog.locale.language == &quot;es&quot;'/>Artículo Siguiente<b:elseif cond='data:blog.locale.language == &quot;pt&quot;'/>Próxima Postagem<b:else/><data:messages.older/></b:if>
-        <b:case value='loadMorePosts'/><b:if cond='data:blog.locale.language == &quot;en&quot;'>Load More<b:elseif cond='data:blog.locale.language == &quot;es&quot;'/>Carga Más<b:elseif cond='data:blog.locale.language == &quot;pt&quot;'/>Carregar Mais<b:else/><data:messages.loadMorePosts/></b:if>
-        <b:case value='noMorePosts'/><b:if cond='data:blog.locale.language == &quot;en&quot;'>That is All<b:elseif cond='data:blog.locale.language == &quot;es&quot;'/>Eso es Todo<b:elseif cond='data:blog.locale.language == &quot;pt&quot;'/>Isso é Tudo<b:else/><data:messages.noResultsFound/></b:if>
+        <b:case value='prevPost'/><b:if cond='data:blog.locale.language == &quot;en&quot;'>Previous Post<b:elseif cond='data:blog.locale.language == &quot;es&quot;'/>Artículo Anterior<b:elseif cond='data:blog.locale.language == &quot;pt&quot;'/>Postagem Anterior<b:elseif cond='data:blog.locale.language == &quot;zh&quot;'/>上一页<b:else/><data:messages.newer/></b:if>
+        <b:case value='nextPost'/><b:if cond='data:blog.locale.language == &quot;en&quot;'>Next Post<b:elseif cond='data:blog.locale.language == &quot;es&quot;'/>Artículo Siguiente<b:elseif cond='data:blog.locale.language == &quot;pt&quot;'/>Próxima Postagem<b:elseif cond='data:blog.locale.language == &quot;zh&quot;'/>下一页<b:else/><data:messages.older/></b:if>
+        <b:case value='loadMorePosts'/><b:if cond='data:blog.locale.language == &quot;en&quot;'>Load More<b:elseif cond='data:blog.locale.language == &quot;es&quot;'/>Carga Más<b:elseif cond='data:blog.locale.language == &quot;pt&quot;'/>Carregar Mais<b:elseif cond='data:blog.locale.language == &quot;zh&quot;'/>加载更多<b:else/><data:messages.loadMorePosts/></b:if>
+        <b:case value='noMorePosts'/><b:if cond='data:blog.locale.language == &quot;en&quot;'>That is All<b:elseif cond='data:blog.locale.language == &quot;es&quot;'/>Eso es Todo<b:elseif cond='data:blog.locale.language == &quot;pt&quot;'/>Isso é Tudo<b:elseif cond='data:blog.locale.language == &quot;zh&quot;'/>到底了<b:else/><data:messages.noResultsFound/></b:if>
       </b:switch>
     </b:includable>
     <b:includable id='widget-title'>
@@ -2423,7 +2423,7 @@ body#layout #hidden-widgets{display:none!important}
       <b:widget id='HTML100' locked='true' title='JSON Variables' type='HTML' visible='true'>
         <b:widget-settings>
           <b:widget-setting name='content'>{
-  viewAllText: &quot;View all&quot;,
+  viewAllText: &quot;查看全部&quot;,
   dateFormat: &quot;{m} {d}, {y}&quot;,
   months: {
     jan: &quot;January&quot;,
@@ -2459,15 +2459,15 @@ body#layout #hidden-widgets{display:none!important}
             <div class='header-items'>
               <div class='flex-left'>
                 <b:section class='main-logo' id='main-logo' maxwidgets='1' name='Header Logo' showaddelement='no'>
-                  <b:widget id='Header1' locked='true' title='一个博客 (标题)' type='Header' visible='true'>
+                  <b:widget id='Header1' locked='true' title='Relife (标题)' type='Header' visible='true'>
                     <b:widget-settings>
-                      <b:widget-setting name='displayUrl'>https://cdn.jsdelivr.net/gh/jhq223/tuchuang@main/img/20210908cc66231e47952507.png</b:widget-setting>
-                      <b:widget-setting name='displayHeight'>60</b:widget-setting>
+                      <b:widget-setting name='displayUrl'>https://cdn.jsdelivr.net/gh/jhq223/tuchuang@main/img/20210908f8180b9df8970fd5.png</b:widget-setting>
+                      <b:widget-setting name='displayHeight'>768</b:widget-setting>
                       <b:widget-setting name='sectionWidth'>150</b:widget-setting>
                       <b:widget-setting name='useImage'>true</b:widget-setting>
                       <b:widget-setting name='shrinkToFit'>false</b:widget-setting>
                       <b:widget-setting name='imagePlacement'>REPLACE</b:widget-setting>
-                      <b:widget-setting name='displayWidth'>221</b:widget-setting>
+                      <b:widget-setting name='displayWidth'>1366</b:widget-setting>
                     </b:widget-settings>
                     <b:includable id='main' var='this'>
       <b:tag class='mobile-menu-toggle' href='javascript:;' name='a' role='button' title='Menu'/>
@@ -2522,7 +2522,7 @@ body#layout #hidden-widgets{display:none!important}
                       <b:widget-setting name='text-7'>_Contact Page</b:widget-setting>
                       <b:widget-setting name='text-6'>__Right Sidebar</b:widget-setting>
                       <b:widget-setting name='text-11'>Tipography</b:widget-setting>
-                      <b:widget-setting name='text-12'>Shortcodes</b:widget-setting>
+                      <b:widget-setting name='text-12'>友情链接</b:widget-setting>
                     </b:widget-settings>
                     <b:includable id='main' var='this'>
       <b:include name='widget-title'/>
@@ -2559,10 +2559,7 @@ body#layout #hidden-widgets{display:none!important}
     <!-- Header Ads -->
     <div class='flex-center' id='header-ads-wrap'>
       <b:section class='header-ads container row-x1' id='header-ads' maxwidgets='1' name='Header ADS' showaddelement='yes'>
-        <b:widget id='HTML1' locked='false' title='' type='HTML' visible='true'>
-          <b:widget-settings>
-            <b:widget-setting name='content'><![CDATA[<a class="ads-here" href="https://www.am2z.com/">Responsive Advertisement</a>]]></b:widget-setting>
-          </b:widget-settings>
+        <b:widget id='HTML1' locked='false' title='' type='HTML' visible='false'>
           <b:includable id='main'>
       <b:include name='html-content'/>
     </b:includable>
@@ -2647,7 +2644,7 @@ body#layout #hidden-widgets{display:none!important}
             <b:widget-setting name='numItemsToShow'>3</b:widget-setting>
             <b:widget-setting name='showThumbnails'>true</b:widget-setting>
             <b:widget-setting name='showSnippets'>true</b:widget-setting>
-            <b:widget-setting name='timeRange'>LAST_YEAR</b:widget-setting>
+            <b:widget-setting name='timeRange'>ALL_TIME</b:widget-setting>
           </b:widget-settings>
           <b:includable id='main' var='this'>
       <b:include name='widget-title'/>
@@ -3491,10 +3488,7 @@ body#layout #hidden-widgets{display:none!important}
     <!-- Footer Ads -->
     <div class='flex-center' id='footer-ads-wrap'>
       <b:section class='footer-ads container row-x1' id='footer-ads' maxwidgets='1' name='Footer ADS' showaddelement='yes'>
-        <b:widget id='HTML33' locked='false' title='' type='HTML' visible='true'>
-          <b:widget-settings>
-            <b:widget-setting name='content'><![CDATA[<a class="ads-here" href="https://www.mrjaz.com/">Responsive Advertisement</a>]]></b:widget-setting>
-          </b:widget-settings>
+        <b:widget id='HTML33' locked='false' title='' type='HTML' visible='false'>
           <b:includable id='main'>
       <b:include name='html-content'/>
     </b:includable>
@@ -3510,11 +3504,11 @@ body#layout #hidden-widgets{display:none!important}
         <b:section class='litespot-pro-about-section' id='litespot-pro-about-section' maxwidgets='2' name='About Section' showaddelement='yes'>
           <b:widget id='Image101' locked='true' title='关于' type='Image' visible='true'>
             <b:widget-settings>
-              <b:widget-setting name='displayUrl'>https://4.bp.blogspot.com/-k85R41ocAFo/YEgCvleTEZI/AAAAAAAADUA/F6bOah03kT0C01PFJpJC4Tf14FuHNv96wCK4BGAYYCw/s221/logo.png</b:widget-setting>
-              <b:widget-setting name='displayHeight'>60</b:widget-setting>
+              <b:widget-setting name='displayUrl'>https://cdn.jsdelivr.net/gh/jhq223/tuchuang@main/img/20210908f8180b9df8970fd5.png</b:widget-setting>
+              <b:widget-setting name='displayHeight'>768</b:widget-setting>
               <b:widget-setting name='sectionWidth'>150</b:widget-setting>
               <b:widget-setting name='shrinkToFit'>false</b:widget-setting>
-              <b:widget-setting name='displayWidth'>221</b:widget-setting>
+              <b:widget-setting name='displayWidth'>1366</b:widget-setting>
               <b:widget-setting name='link'>/</b:widget-setting>
               <b:widget-setting name='caption'><![CDATA[Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's.]]></b:widget-setting>
             </b:widget-settings>
@@ -3657,8 +3651,7 @@ body#layout #hidden-widgets{display:none!important}
 <script src='https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.13.18/contrib/auto-render.min.js'/>
 <script>
     renderMathInElement(document.body);
-     [{left: &quot;$&quot;, right: &quot;$&quot;, display: false}]
-    });
+     [{left: &quot;$&quot;, right: &quot;$&quot;, display: false}];
 </script>
 <!-- KaTeX Additions END-->
 
